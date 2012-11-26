@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PMr-D5-fSW" kind="relationship" relationship="viewControllers" id="InM-9b-RI6"/>
+                        <segue destination="1bL-b4-m0D" kind="relationship" relationship="viewControllers" id="u2b-17-UAL"/>
+                        <segue destination="BK6-Gr-eJR" kind="relationship" relationship="viewControllers" id="emR-Uk-idb"/>
+                        <segue destination="b4X-ek-JVe" kind="relationship" relationship="viewControllers" id="XfM-Ou-RDI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+        <!--Help Phone First View Controller - First-->
+        <scene sceneID="h4c-ZM-OmJ">
+            <objects>
+                <viewController title="First" id="PMr-D5-fSW" customClass="helpPhoneFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="heE-Nd-ZPM">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="x8K-cb-PiU">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PMr-D5-fSW" id="xTb-i9-VjK"/>
+                                    <outlet property="delegate" destination="PMr-D5-fSW" id="i0R-nQ-DYI"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="115" verticalHuggingPriority="45" horizontalCompressionResistancePriority="185" verticalCompressionResistancePriority="273" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJD-u8-w6R">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6nZ-6m-2eX"/>
+                                    <constraint firstAttribute="width" constant="50" id="q6G-9A-GYf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="aboutMe.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutMe:" destination="PMr-D5-fSW" eventType="touchUpInside" id="RRo-Yo-Ard"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x8K-cb-PiU" firstAttribute="top" secondItem="heE-Nd-ZPM" secondAttribute="top" type="default" id="Cl4-5v-LIa"/>
+                            <constraint firstItem="x8K-cb-PiU" firstAttribute="leading" secondItem="heE-Nd-ZPM" secondAttribute="leading" type="default" id="HoM-Ao-cyu"/>
+                            <constraint firstItem="pJD-u8-w6R" firstAttribute="trailing" secondItem="heE-Nd-ZPM" secondAttribute="trailing" type="default" id="Pgo-i8-Y72"/>
+                            <constraint firstItem="x8K-cb-PiU" firstAttribute="trailing" secondItem="heE-Nd-ZPM" secondAttribute="trailing" type="default" id="ieX-4c-2hk"/>
+                            <constraint firstItem="pJD-u8-w6R" firstAttribute="top" secondItem="heE-Nd-ZPM" secondAttribute="top" type="default" id="owC-dd-fK1"/>
+                            <constraint firstItem="x8K-cb-PiU" firstAttribute="bottom" secondItem="heE-Nd-ZPM" secondAttribute="bottom" type="default" id="ynn-wc-AFa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="救援" image="Urgent.png" id="Odo-jN-qdG"/>
+                    <connections>
+                        <outlet property="teltableView" destination="x8K-cb-PiU" id="SdD-zU-eIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7P-7b-rFN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="-157"/>
+        </scene>
+        <!--Customer Service View Controller - 客服-->
+        <scene sceneID="kEe-4N-U9Y">
+            <objects>
+                <viewController id="BK6-Gr-eJR" customClass="customerServiceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IsW-9F-eFo">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KYy-o9-hdT">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BK6-Gr-eJR" id="E1h-q9-ZRi"/>
+                                    <outlet property="delegate" destination="BK6-Gr-eJR" id="hlZ-i7-PFC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KYy-o9-hdT" firstAttribute="bottom" secondItem="IsW-9F-eFo" secondAttribute="bottom" type="default" id="5OS-XU-FPg"/>
+                            <constraint firstItem="KYy-o9-hdT" firstAttribute="top" secondItem="IsW-9F-eFo" secondAttribute="top" type="default" id="F2D-it-28I"/>
+                            <constraint firstItem="KYy-o9-hdT" firstAttribute="trailing" secondItem="IsW-9F-eFo" secondAttribute="trailing" type="default" id="S4t-8t-Qkl"/>
+                            <constraint firstItem="KYy-o9-hdT" firstAttribute="leading" secondItem="IsW-9F-eFo" secondAttribute="leading" type="default" id="bHO-52-9wJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="客服" image="Telecommunications.png" id="YZT-xg-qYN"/>
+                    <connections>
+                        <outlet property="teltableView" destination="KYy-o9-hdT" id="rxR-3v-8PR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dW-En-XuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="-157"/>
+        </scene>
+        <!--Help Phone Second View Controller - Second-->
+        <scene sceneID="8ld-jc-0ZC">
+            <objects>
+                <viewController title="Second" id="1bL-b4-m0D" customClass="helpPhoneSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywJ-Z7-RLv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AIQ-iI-NHa">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1bL-b4-m0D" id="8UE-S6-ov9"/>
+                                    <outlet property="delegate" destination="1bL-b4-m0D" id="YKx-Lc-MCf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AIQ-iI-NHa" firstAttribute="top" secondItem="ywJ-Z7-RLv" secondAttribute="top" type="default" id="05h-3i-z5a"/>
+                            <constraint firstItem="AIQ-iI-NHa" firstAttribute="trailing" secondItem="ywJ-Z7-RLv" secondAttribute="trailing" type="default" id="Mbg-Sv-mYH"/>
+                            <constraint firstItem="AIQ-iI-NHa" firstAttribute="bottom" secondItem="ywJ-Z7-RLv" secondAttribute="bottom" type="default" id="ad7-YB-o2x"/>
+                            <constraint firstItem="AIQ-iI-NHa" firstAttribute="leading" secondItem="ywJ-Z7-RLv" secondAttribute="leading" type="default" id="mtK-7g-DVI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="生活" image="Daily.png" id="ZfK-Fm-x4H"/>
+                    <connections>
+                        <outlet property="teltableView" destination="AIQ-iI-NHa" id="dFK-Wb-WnF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdb-ex-TNG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="493"/>
+        </scene>
+        <!--Traffic View Controller - 客服-->
+        <scene sceneID="OJA-pG-Qhi">
+            <objects>
+                <viewController id="b4X-ek-JVe" customClass="TrafficViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i9n-eR-ftd">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eWj-is-5fb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b4X-ek-JVe" id="yKl-8j-oeM"/>
+                                    <outlet property="delegate" destination="b4X-ek-JVe" id="Rjh-j0-n7d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWj-is-5fb" firstAttribute="trailing" secondItem="i9n-eR-ftd" secondAttribute="trailing" type="default" id="DH5-Ue-JLH"/>
+                            <constraint firstItem="eWj-is-5fb" firstAttribute="leading" secondItem="i9n-eR-ftd" secondAttribute="leading" type="default" id="Hvk-r3-AfT"/>
+                            <constraint firstItem="eWj-is-5fb" firstAttribute="bottom" secondItem="i9n-eR-ftd" secondAttribute="bottom" type="default" id="bg3-Ah-d9q"/>
+                            <constraint firstItem="eWj-is-5fb" firstAttribute="top" secondItem="i9n-eR-ftd" secondAttribute="top" type="default" id="iUa-Lj-ig0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="客服" image="Traffic.png" id="hNv-co-SQa"/>
+                    <connections>
+                        <outlet property="teltableView" destination="eWj-is-5fb" id="CGp-nS-KOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PI-ud-bKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Daily.png" width="30" height="30"/>
+        <image name="Telecommunications.png" width="30" height="30"/>
+        <image name="Traffic.png" width="30" height="30"/>
+        <image name="Urgent.png" width="30" height="30"/>
+        <image name="aboutMe.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TrafficViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrafficViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="teltableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="customerServiceViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/customerServiceViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="teltableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="helpPhoneFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/helpPhoneFirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="teltableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="helpPhoneSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/helpPhoneSecondViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="teltableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
