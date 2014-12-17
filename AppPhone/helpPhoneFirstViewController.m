@@ -31,6 +31,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"新方法讀資料庫");
     [super viewDidLoad];
     //新方法讀資料庫
     //判斷資料庫的全路徑，全名跟副檔名，存入path做使用

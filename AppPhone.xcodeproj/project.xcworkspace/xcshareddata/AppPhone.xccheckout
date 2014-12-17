@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D7684DDA-69F3-48C8-8B87-511935D0A161</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppPhone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>307F4D56F16581ADF830FFEAA7F76505E6B6014D</key>
+		<string>https://github.com/just105/AppPhone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AppPhone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>307F4D56F16581ADF830FFEAA7F76505E6B6014D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/just105/AppPhone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>307F4D56F16581ADF830FFEAA7F76505E6B6014D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>307F4D56F16581ADF830FFEAA7F76505E6B6014D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AppPhone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
